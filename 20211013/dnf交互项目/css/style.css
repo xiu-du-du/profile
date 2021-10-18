@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.top-nav{
+    height: 42px;
+    color:rgb(70,70,70);
+    display: flex;
+    justify-content: space-around;
+}
+.top-nav .left-nav{
+    line-height: 42px;
+}
+.top-nav .left-nav span:first-child{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 30px;
+}
+.top-nav .left-nav span:last-child{
+    color: rgb(182,46,29);
+    font-weight: bold;
+}
+
+.top-nav .right-nav ul{
+    display: flex;
+}
+
+.right-nav ul li a{
+    font-size: 14px;
+    color: rgb(70,70,70);
+    line-height: 42px;
+}
+.right-nav ul li a:hover{
+    color: red;
+}
+
+
+.nav-bg{
+    display: flex;
+    justify-content: center;
+    background-color: #f0b652;
+}
+.wrapper{
+    width: 1920px;
+    position: relative;
+}
+.header-wrapper>.imgWrapper{
+    height: 474px;
+    background-image: url(".././img/bg.png");
+    overflow: hidden;
+    background-size: 100% 100%;
+}
+.logoWrapper{
+    width: 162px;
+    height: 118px;
+    background-image: url(".././img/logo.png");
+    position: absolute;
+    left: 460px;
+    top: 16px;
+}
+.navTopWrapper>.imgWrapper{
+    height: 721px;
+    background: url(".././img/bg1.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.navCenterWrapper>.imgWrapper{
+    height: 738px;
+    background-image: url(".././img/bg2.jpg");
+    background-size: 100% 100%;
+
+}
+.navBottomWrapper>.imgWrapper{
+    height: 324px;
+    background-image: url(".././img/bg3.jpg");
+    background-size: 100% 100%;
+}
+
+.footerWrapper{
+    height: 195px;
+    background-color: black;
+    overflow: auto;
+}
+.ulFoot{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.ulFoot .footerEnd{
+    display: flex;
+}
+
+.ulFoot .footerEnd li a{
+    color: rgb(153,153,153);
+    font-size: 18px;
+    line-height: 30px;
+}
+.ulFoot .footerEnd li a:hover,
+.pFoot p a:hover
+{
+    color: #fff;
+}
+.ulFoot .footerEnd li:not(:first-child):before,
+.right-nav ul li:not(:first-child):before
+{
+    content: '丨';
+    font-size: 14px;
+    color: rgb(153,153,153);
+    margin: auto 4px;
+}
+
+
+.pFoot{
+    color: rgb(153,153,153);
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+.pFoot p{
+    margin-top: 10px;
+}
+.pFoot p a{
+    color: rgb(153,153,153);
+}
